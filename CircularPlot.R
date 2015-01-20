@@ -6,7 +6,7 @@
 # The myCirclePlot function expect:
 # df: a data frame of links (origin, destination, weight of the flow), 
 # marg: a numeric value between 0 and 0.4 to set the space dedicated to the names of the regions,
-# nflow:  an integer to set the number of flows to plot
+# nflows:  an integer to set the number of flows to plot
 
 
 myCirclePlot <- function(df, marg, nflows){
