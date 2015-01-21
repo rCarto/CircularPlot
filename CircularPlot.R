@@ -44,7 +44,7 @@ myCirclePlot <- function(df, marg, nflows){
                            dd <- ifelse(theta < 90 || theta > 270, "clockwise", "reverse.clockwise")
                            aa = c(1, 0.5)
                            if(theta < 90 || theta > 270)  aa =c(0, 0.5)
-                           circos.text(x=mean(xlim), y=1.1, labels=name, facing = dd, cex=0.6,  adj = aa)
+                           circos.text(x=mean(xlim), y=1.1, labels=name, facing = dd, cex=0.8,  adj = aa)
                            circos.rect(xleft=xlim[1], ybottom=ylim[1], xright=xlim[2], ytop=ylim[2], 
                                        col = region$rcol[i], border="white")
                            circos.rect(xleft=xlim[1], ybottom=ylim[1], xright=xlim[2]-rowSums(mat)[i], ytop=ylim[1]+0.3, 
